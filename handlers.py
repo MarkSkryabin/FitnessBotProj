@@ -151,7 +151,7 @@ async def get_city(message: Message, state: FSMContext):
 @router.message(Form.calorie_goal)
 async def get_calorie_goal(message: Message, state: FSMContext):
     # Проверка сообщения
-    if message.text != 'да' or message.text != 'Да' or message.text != 'ДА':
+    if message.text != 'да' and message.text != 'Да' and message.text != 'ДА':
         try:
             float(message.text)
         except ValueError:
