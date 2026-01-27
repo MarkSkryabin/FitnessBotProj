@@ -1,7 +1,8 @@
 import aiosqlite
 from datetime import date
 from count_funcs import day_value_water
-from config import DB_PATH
+
+DB_PATH = 'fitness_database.db'
 
 
 async def init_db():
